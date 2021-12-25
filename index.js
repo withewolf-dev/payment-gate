@@ -54,6 +54,6 @@ app.post("/profile", function (req, res) {
   res.send();
 });
 
-app.listen(1337, () => {
+app.listen(process.env.PORT || 1337, () => {
   console.log("Backend running at localhost:1337");
 });
